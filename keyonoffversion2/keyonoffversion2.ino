@@ -1,8 +1,5 @@
 int incomingByte = 0;   // for incoming serial data
 int led = 13;
-unsigned char sample_count = 0; // current sample number
-int sum = 0;
-float voltage = 0.0; 
 
 
 void setup() {
@@ -22,6 +19,7 @@ void setup() {
 void loop(){
 
                 readvoltage();
+                randomnum();
                 if (Serial.available() > 0) {
                 int inByte = Serial.read();
                 

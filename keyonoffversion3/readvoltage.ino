@@ -1,3 +1,4 @@
+// number of analog samples to take per reading
 #define NUM_SAMPLES 10
 
 
@@ -21,7 +22,6 @@ void readvoltage()  {
     voltage = voltage * 11.175;
     sample_count = 0;
     sum = 0;
-    Serial.println(voltage);  
-
 }
+
 
