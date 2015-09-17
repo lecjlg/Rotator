@@ -27,7 +27,7 @@ void loop(){
                 randomnum();
              
                         
-                if (voltage <= moveval)
+                if (voltage < moveval)
                 {
                     Serial.print("voltage from rotator is");
                     Serial.println(voltage);
@@ -47,7 +47,7 @@ void loop(){
                 }
                                            
                 }
-                if (voltage >= moveval)
+                if (voltage > moveval)
                 {
                    Serial.print("voltage from rotator is");
                    Serial.println(voltage);
