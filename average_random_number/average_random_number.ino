@@ -9,7 +9,7 @@ Serial.println("Starting number generator");
 }
 
 void loop() {
-randNumber = random(259);  //define range for the randon number
+randNumber = random(360);  //define range for the randon number
       
   
   if (counter  < 30) {  
