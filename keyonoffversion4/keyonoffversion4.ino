@@ -30,11 +30,7 @@ void loop(){
                 if (voltage < moveval)
                 {
                     Serial.print("voltage from rotator is");
-                    Serial.println(voltage);
-                    
-                    Serial.print("Random number is");
-                    Serial.println(sums);
-                                        
+                    Serial.println(voltage);                                                          
                     Serial.println("turn clockwise");
                     digitalWrite(12, HIGH); //Establishes forward direction of Channel A
                     digitalWrite(9, LOW);   //Disengage the Brake for Channel A
@@ -50,9 +46,7 @@ void loop(){
                 if (voltage > moveval)
                 {
                    Serial.print("voltage from rotator is");
-                   Serial.println(voltage);
-                   Serial.print("Random number is");
-                   Serial.println(sums);                   
+                   Serial.println(voltage);                  
                    Serial.println("turn counter clockwise");
                    digitalWrite(12, LOW);  //Establishes backward direction of Channel A 
                    digitalWrite(9, LOW);   //Disengage the Brake for Channel A         

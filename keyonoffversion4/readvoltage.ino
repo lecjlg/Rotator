@@ -19,7 +19,7 @@ void readvoltage()  {
     // voltage multiplied by 11 when using voltage divider that
     // divides by 11. 11.132 is the calibrated voltage divide
     // value
-    voltage = voltage * 11.175;
+    voltage = voltage * 11.06172839506173;
     sample_count = 0;
     sum = 0;
     Serial.println(voltage);  
