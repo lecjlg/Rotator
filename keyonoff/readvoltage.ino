@@ -21,7 +21,7 @@ void readvoltage()  {
     voltage = voltage * 11.06172839506173;
     sample_count = 0;
     sum = 0;
-    Serial.println(voltage);  
+    //Serial.println(voltage);  
 
 }
 
