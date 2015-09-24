@@ -1,0 +1,14 @@
+#!/usr/bin/gnuplot
+
+set title "Running 5 minute average"
+unset multiplot
+set size 1,1
+#set style data lines
+set terminal png size 1024,768 font "LiberationSans-Regular,9"
+set xlabel "Previous 12 hours"
+set ylabel "RM young and Rotator"
+set autoscale y
+set autoscale x
+set output "5minrunavg.png"
+plot '5min_data' using 2 title 'Sensor position', '5min_data' using 3 title 'RM Young position' with lines 
+
